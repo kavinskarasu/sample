@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mail-contact form</title>
+    <!-- <link rel="stylesheet" href="./css/style.css"> -->
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="box">
+        <form id="form" action="http://localhost:8000/sendMail" method="post">
+          Name :
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Enter your name"
+          /><br />
+          <!-- contact : <input type="number" name="contact" id="contact" placeholder="Enter your contact"><br> -->
+          Email :
+          <input
+            type="email"
+            name="email"
+            id="mail"
+            placeholder="Enter your email"
+          /><br />
+          Message:
+          <textarea
+            name="msg"
+            id="txt"
+            cols="30"
+            rows="10"
+            placeholder="Enter the message"
+          ></textarea>
+          <button class="button1" type="submit" class="btn">Send</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
