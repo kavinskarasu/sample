@@ -24,7 +24,7 @@ app.post("/sendMail", async (req, res) => {
     subject: "mailtxt",
     text: `${req.body.msg}`,
   };
-  transporter.sendMail(mailoptions, function (error, info) {
+   transporter.sendMail(mailoptions, function (error, info) {
     if (error) {
        console.log(error);
     } else {
