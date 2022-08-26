@@ -36,7 +36,7 @@ app.post("/sendMail", async (req, res) => {
     statua: "success",
     data: {
       name:  req.body.name,
-      mail: req.body.email,
+      mail:  req.body.email,
       text: req.body.msg,
     },
   });
