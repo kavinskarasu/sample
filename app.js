@@ -26,7 +26,7 @@ app.post("/sendMail", async (req, res) => {
   };
   transporter.sendMail(mailoptions, function (error, info) {
     if (error) {
-      console.log(error);
+       console.log(error);
     } else {
       console.log("Emails sent:" + info.response);
     }
